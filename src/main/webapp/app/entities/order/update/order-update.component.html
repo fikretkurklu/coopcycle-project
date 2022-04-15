@@ -1,0 +1,101 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2 id="jhi-order-heading" data-cy="OrderCreateUpdateHeading" jhiTranslate="coopcyleJhipsterApp.order.home.createOrEditLabel">
+        Create or edit a Order
+      </h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        <div class="row mb-3" [hidden]="editForm.get('id')!.value == null">
+          <label class="form-label" jhiTranslate="global.field.id" for="field_id">ID</label>
+          <input type="number" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="coopcyleJhipsterApp.order.deliveryAddress" for="field_deliveryAddress"
+            >Delivery Address</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="deliveryAddress"
+            id="field_deliveryAddress"
+            data-cy="deliveryAddress"
+            formControlName="deliveryAddress"
+          />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="coopcyleJhipsterApp.order.takeoutAdress" for="field_takeoutAdress">Takeout Adress</label>
+          <input
+            type="text"
+            class="form-control"
+            name="takeoutAdress"
+            id="field_takeoutAdress"
+            data-cy="takeoutAdress"
+            formControlName="takeoutAdress"
+          />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="coopcyleJhipsterApp.order.deliveryMan" for="field_deliveryMan">Delivery Man</label>
+          <select class="form-control" id="field_deliveryMan" data-cy="deliveryMan" name="deliveryMan" formControlName="deliveryMan">
+            <option [ngValue]="null"></option>
+            <option
+              [ngValue]="
+                deliveryManOption.id === editForm.get('deliveryMan')!.value?.id ? editForm.get('deliveryMan')!.value : deliveryManOption
+              "
+              *ngFor="let deliveryManOption of deliveryMenSharedCollection; trackBy: trackDeliveryManById"
+            >
+              {{ deliveryManOption.id }}
+            </option>
+          </select>
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="coopcyleJhipsterApp.order.shop" for="field_shop">Shop</label>
+          <select class="form-control" id="field_shop" data-cy="shop" name="shop" formControlName="shop">
+            <option [ngValue]="null"></option>
+            <option
+              [ngValue]="shopOption.id === editForm.get('shop')!.value?.id ? editForm.get('shop')!.value : shopOption"
+              *ngFor="let shopOption of shopsSharedCollection; trackBy: trackShopById"
+            >
+              {{ shopOption.id }}
+            </option>
+          </select>
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="coopcyleJhipsterApp.order.client" for="field_client">Client</label>
+          <select class="form-control" id="field_client" data-cy="client" name="client" formControlName="client">
+            <option [ngValue]="null"></option>
+            <option
+              [ngValue]="clientOption.id === editForm.get('client')!.value?.id ? editForm.get('client')!.value : clientOption"
+              *ngFor="let clientOption of clientsSharedCollection; trackBy: trackClientById"
+            >
+              {{ clientOption.id }}
+            </option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" data-cy="entityCreateCancelButton" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

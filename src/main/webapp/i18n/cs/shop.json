@@ -1,0 +1,33 @@
+{
+  "coopcyleJhipsterApp": {
+    "shop": {
+      "home": {
+        "title": "Shops",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Shop",
+        "createOrEditLabel": "Vytvořit nebo upravit Shop",
+        "notFound": "No Shops found"
+      },
+      "created": "Byl vytvořen potomek entity Shop s identifikátorem {{ param }}",
+      "updated": "Potomek entity Shop s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Shop s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Shop {{ id }}?"
+      },
+      "detail": {
+        "title": "Shop"
+      },
+      "id": "ID",
+      "rating": "Rating",
+      "open": "Open",
+      "averageDeliveryTime": "Average Delivery Time",
+      "closingHour": "Closing Hour",
+      "openingHour": "Opening Hour",
+      "tags": "Tags",
+      "user": "User",
+      "delivery": "Delivery",
+      "payment": "Payment",
+      "cooperative": "Cooperative"
+    }
+  }
+}

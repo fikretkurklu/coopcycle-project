@@ -1,0 +1,29 @@
+{
+  "coopcyleJhipsterApp": {
+    "deliveryMan": {
+      "home": {
+        "title": "Delivery Men",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Delivery Man",
+        "createOrEditLabel": "Vytvořit nebo upravit Delivery Man",
+        "notFound": "No Delivery Men found"
+      },
+      "created": "Byl vytvořen potomek entity Delivery Man s identifikátorem {{ param }}",
+      "updated": "Potomek entity Delivery Man s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Delivery Man s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Delivery Man {{ id }}?"
+      },
+      "detail": {
+        "title": "Delivery Man"
+      },
+      "id": "ID",
+      "vehicleType": "Vehicle Type",
+      "rides": "Rides",
+      "earned": "Earned",
+      "rating": "Rating",
+      "user": "User",
+      "delivery": "Delivery"
+    }
+  }
+}

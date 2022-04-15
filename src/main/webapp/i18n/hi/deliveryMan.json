@@ -1,0 +1,29 @@
+{
+  "coopcyleJhipsterApp": {
+    "deliveryMan": {
+      "home": {
+        "title": "DeliveryMen",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Delivery Man बनाएँ",
+        "createOrEditLabel": "Delivery Man बनाएँ या संपादित करें",
+        "notFound": "No Delivery Men found"
+      },
+      "created": "एक नया Delivery Man [identifier: {{ param }}] तैयार है",
+      "updated": "एक Delivery Man [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Delivery Man [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Delivery Man [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Delivery Man"
+      },
+      "id": "ID",
+      "vehicleType": "Vehicle Type",
+      "rides": "Rides",
+      "earned": "Earned",
+      "rating": "Rating",
+      "user": "User",
+      "delivery": "Delivery"
+    }
+  }
+}

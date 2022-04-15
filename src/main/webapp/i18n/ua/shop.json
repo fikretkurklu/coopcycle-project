@@ -1,0 +1,33 @@
+{
+  "coopcyleJhipsterApp": {
+    "shop": {
+      "home": {
+        "title": "Shops",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Створити новий Shop",
+        "createOrEditLabel": "Створити чи редагувати Shop",
+        "notFound": "No Shops found"
+      },
+      "created": "Новий Shop створений з ідентифікатором {{ param }}",
+      "updated": "Shop оновлений з ідентифікатором {{ param }}",
+      "deleted": "Shop видалений з ідентифікатором {{ param }}",
+      "delete": {
+        "question": "Ви впевнені, що хочете видалити Shop {{ id }}?"
+      },
+      "detail": {
+        "title": "Shop"
+      },
+      "id": "ID",
+      "rating": "Rating",
+      "open": "Open",
+      "averageDeliveryTime": "Average Delivery Time",
+      "closingHour": "Closing Hour",
+      "openingHour": "Opening Hour",
+      "tags": "Tags",
+      "user": "User",
+      "delivery": "Delivery",
+      "payment": "Payment",
+      "cooperative": "Cooperative"
+    }
+  }
+}

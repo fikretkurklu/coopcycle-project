@@ -1,0 +1,27 @@
+{
+  "coopcyleJhipsterApp": {
+    "payment": {
+      "home": {
+        "title": "Payments",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Payment बनाएँ",
+        "createOrEditLabel": "Payment बनाएँ या संपादित करें",
+        "notFound": "No Payments found"
+      },
+      "created": "एक नया Payment [identifier: {{ param }}] तैयार है",
+      "updated": "एक Payment [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Payment [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Payment [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Payment"
+      },
+      "id": "ID",
+      "paymentMethod": "Payment Method",
+      "amount": "Amount",
+      "shop": "Shop",
+      "client": "Client"
+    }
+  }
+}

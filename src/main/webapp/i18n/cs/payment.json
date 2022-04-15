@@ -1,0 +1,27 @@
+{
+  "coopcyleJhipsterApp": {
+    "payment": {
+      "home": {
+        "title": "Payments",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Payment",
+        "createOrEditLabel": "Vytvořit nebo upravit Payment",
+        "notFound": "No Payments found"
+      },
+      "created": "Byl vytvořen potomek entity Payment s identifikátorem {{ param }}",
+      "updated": "Potomek entity Payment s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Payment s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Payment {{ id }}?"
+      },
+      "detail": {
+        "title": "Payment"
+      },
+      "id": "ID",
+      "paymentMethod": "Payment Method",
+      "amount": "Amount",
+      "shop": "Shop",
+      "client": "Client"
+    }
+  }
+}

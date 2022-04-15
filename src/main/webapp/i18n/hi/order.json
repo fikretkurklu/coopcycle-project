@@ -1,0 +1,28 @@
+{
+  "coopcyleJhipsterApp": {
+    "order": {
+      "home": {
+        "title": "Orders",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Order बनाएँ",
+        "createOrEditLabel": "Order बनाएँ या संपादित करें",
+        "notFound": "No Orders found"
+      },
+      "created": "एक नया Order [identifier: {{ param }}] तैयार है",
+      "updated": "एक Order [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Order [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Order [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Order"
+      },
+      "id": "ID",
+      "deliveryAddress": "Delivery Address",
+      "takeoutAdress": "Takeout Adress",
+      "deliveryMan": "Delivery Man",
+      "shop": "Shop",
+      "client": "Client"
+    }
+  }
+}

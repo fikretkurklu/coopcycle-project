@@ -1,0 +1,46 @@
+{
+  "applications": "*",
+  "changelogDate": "20220415202133",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "delivery_man",
+  "fields": [
+    {
+      "fieldName": "vehicleType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rides",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "earned",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "rating",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "DeliveryMan",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "deliveryMan",
+      "ownerSide": true,
+      "relationshipName": "user",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "order",
+      "otherEntityRelationshipName": "deliveryMan",
+      "relationshipName": "delivery",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

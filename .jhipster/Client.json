@@ -1,0 +1,44 @@
+{
+  "applications": "*",
+  "changelogDate": "20220415202132",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "client",
+  "fields": [
+    {
+      "fieldName": "balance",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "orderCount",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Client",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "client",
+      "ownerSide": true,
+      "relationshipName": "user",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "order",
+      "otherEntityRelationshipName": "client",
+      "relationshipName": "delivery",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "payment",
+      "otherEntityRelationshipName": "client",
+      "relationshipName": "payment",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

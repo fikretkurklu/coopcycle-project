@@ -1,0 +1,48 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="payment">
+      <h2 data-cy="paymentDetailsHeading"><span jhiTranslate="coopcyleJhipsterApp.payment.detail.title">Payment</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ payment.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="coopcyleJhipsterApp.payment.paymentMethod">Payment Method</span></dt>
+        <dd>
+          <span>{{ payment.paymentMethod }}</span>
+        </dd>
+        <dt><span jhiTranslate="coopcyleJhipsterApp.payment.amount">Amount</span></dt>
+        <dd>
+          <span>{{ payment.amount }}</span>
+        </dd>
+        <dt><span jhiTranslate="coopcyleJhipsterApp.payment.shop">Shop</span></dt>
+        <dd>
+          <div *ngIf="payment.shop">
+            <a [routerLink]="['/shop', payment.shop?.id, 'view']">{{ payment.shop?.id }}</a>
+          </div>
+        </dd>
+        <dt><span jhiTranslate="coopcyleJhipsterApp.payment.client">Client</span></dt>
+        <dd>
+          <div *ngIf="payment.client">
+            <a [routerLink]="['/client', payment.client?.id, 'view']">{{ payment.client?.id }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/payment', payment.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

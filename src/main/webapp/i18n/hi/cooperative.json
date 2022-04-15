@@ -1,0 +1,26 @@
+{
+  "coopcyleJhipsterApp": {
+    "cooperative": {
+      "home": {
+        "title": "Cooperatives",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Cooperative बनाएँ",
+        "createOrEditLabel": "Cooperative बनाएँ या संपादित करें",
+        "notFound": "No Cooperatives found"
+      },
+      "created": "एक नया Cooperative [identifier: {{ param }}] तैयार है",
+      "updated": "एक Cooperative [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Cooperative [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Cooperative [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Cooperative"
+      },
+      "id": "ID",
+      "city": "City",
+      "numberOfShop": "Number Of Shop",
+      "shop": "Shop"
+    }
+  }
+}

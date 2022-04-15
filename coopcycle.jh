@@ -1,0 +1,91 @@
+
+entity User {
+    id  Integer  required
+    password String required
+    email String
+    username String   
+}
+
+entity Order {
+	deliveryAddress String
+    takeoutAdress String
+}
+
+entity Client {
+    balance Integer
+	orderCount Integer
+}
+
+entity DeliveryMan {
+	vehicleType String
+    rides Integer
+    earned Integer
+    rating String
+}
+
+entity Payment {
+	paymentMethod String required
+	amount Integer required
+}
+
+entity Shop {
+	rating String
+    open Boolean
+    averageDeliveryTime Integer
+    closingHour ZonedDateTime
+    openingHour ZonedDateTime
+    tags String
+}
+
+entity Cooperative {
+	city String required
+    numberOfShop Integer
+}
+
+/////////////////////////////////////////
+
+relationship OneToOne{
+	DeliveryMan{user} to User
+}
+
+relationship OneToMany{
+	DeliveryMan{delivery} to Order
+}
+
+relationship OneToMany{
+	Shop{delivery} to Order
+}
+
+relationship OneToOne{
+	Shop{user} to User
+}
+
+relationship OneToMany{
+	Shop{delivery} to Order
+}
+
+relationship OneToMany{
+	Shop{payment} to Payment
+}
+
+
+relationship OneToMany{
+	Client{delivery} to Order
+}
+
+relationship OneToMany{
+	Client{payment} to Payment
+}
+
+relationship OneToOne{
+	Client{user} to User
+}
+
+relationship OneToMany{
+	Cooperative{shop} to Shop
+}
+
+
+
+
+paginate Client with pagination

@@ -1,0 +1,29 @@
+{
+  "coopcyleJhipsterApp": {
+    "deliveryMan": {
+      "home": {
+        "title": "Delivery Men",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Створити новий Delivery Man",
+        "createOrEditLabel": "Створити чи редагувати Delivery Man",
+        "notFound": "No Delivery Men found"
+      },
+      "created": "Новий Delivery Man створений з ідентифікатором {{ param }}",
+      "updated": "Delivery Man оновлений з ідентифікатором {{ param }}",
+      "deleted": "Delivery Man видалений з ідентифікатором {{ param }}",
+      "delete": {
+        "question": "Ви впевнені, що хочете видалити Delivery Man {{ id }}?"
+      },
+      "detail": {
+        "title": "Delivery Man"
+      },
+      "id": "ID",
+      "vehicleType": "Vehicle Type",
+      "rides": "Rides",
+      "earned": "Earned",
+      "rating": "Rating",
+      "user": "User",
+      "delivery": "Delivery"
+    }
+  }
+}

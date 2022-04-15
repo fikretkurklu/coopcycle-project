@@ -1,0 +1,62 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="shop">
+      <h2 data-cy="shopDetailsHeading"><span jhiTranslate="coopcyleJhipsterApp.shop.detail.title">Shop</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ shop.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="coopcyleJhipsterApp.shop.rating">Rating</span></dt>
+        <dd>
+          <span>{{ shop.rating }}</span>
+        </dd>
+        <dt><span jhiTranslate="coopcyleJhipsterApp.shop.open">Open</span></dt>
+        <dd>
+          <span>{{ shop.open }}</span>
+        </dd>
+        <dt><span jhiTranslate="coopcyleJhipsterApp.shop.averageDeliveryTime">Average Delivery Time</span></dt>
+        <dd>
+          <span>{{ shop.averageDeliveryTime }}</span>
+        </dd>
+        <dt><span jhiTranslate="coopcyleJhipsterApp.shop.closingHour">Closing Hour</span></dt>
+        <dd>
+          <span>{{ shop.closingHour | formatMediumDatetime }}</span>
+        </dd>
+        <dt><span jhiTranslate="coopcyleJhipsterApp.shop.openingHour">Opening Hour</span></dt>
+        <dd>
+          <span>{{ shop.openingHour | formatMediumDatetime }}</span>
+        </dd>
+        <dt><span jhiTranslate="coopcyleJhipsterApp.shop.tags">Tags</span></dt>
+        <dd>
+          <span>{{ shop.tags }}</span>
+        </dd>
+        <dt><span jhiTranslate="coopcyleJhipsterApp.shop.user">User</span></dt>
+        <dd>
+          <span>{{ shop.user?.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="coopcyleJhipsterApp.shop.cooperative">Cooperative</span></dt>
+        <dd>
+          <div *ngIf="shop.cooperative">
+            <a [routerLink]="['/cooperative', shop.cooperative?.id, 'view']">{{ shop.cooperative?.id }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/shop', shop.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

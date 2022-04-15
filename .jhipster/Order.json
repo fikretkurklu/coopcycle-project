@@ -1,0 +1,43 @@
+{
+  "applications": "*",
+  "changelogDate": "20220415202131",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "jhi_order",
+  "fields": [
+    {
+      "fieldName": "deliveryAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "takeoutAdress",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Order",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "deliveryMan",
+      "otherEntityRelationshipName": "delivery",
+      "relationshipName": "deliveryMan",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "shop",
+      "otherEntityRelationshipName": "delivery",
+      "relationshipName": "shop",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "client",
+      "otherEntityRelationshipName": "delivery",
+      "relationshipName": "client",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

@@ -1,0 +1,33 @@
+{
+  "coopcyleJhipsterApp": {
+    "shop": {
+      "home": {
+        "title": "Shops",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Shop बनाएँ",
+        "createOrEditLabel": "Shop बनाएँ या संपादित करें",
+        "notFound": "No Shops found"
+      },
+      "created": "एक नया Shop [identifier: {{ param }}] तैयार है",
+      "updated": "एक Shop [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Shop [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Shop [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Shop"
+      },
+      "id": "ID",
+      "rating": "Rating",
+      "open": "Open",
+      "averageDeliveryTime": "Average Delivery Time",
+      "closingHour": "Closing Hour",
+      "openingHour": "Opening Hour",
+      "tags": "Tags",
+      "user": "User",
+      "delivery": "Delivery",
+      "payment": "Payment",
+      "cooperative": "Cooperative"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "applications": "*",
+  "changelogDate": "20220415202135",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "shop",
+  "fields": [
+    {
+      "fieldName": "rating",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "open",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "averageDeliveryTime",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "closingHour",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "openingHour",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "tags",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Shop",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "shop",
+      "ownerSide": true,
+      "relationshipName": "user",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "order",
+      "otherEntityRelationshipName": "shop",
+      "relationshipName": "delivery",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "payment",
+      "otherEntityRelationshipName": "shop",
+      "relationshipName": "payment",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "cooperative",
+      "otherEntityRelationshipName": "shop",
+      "relationshipName": "cooperative",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

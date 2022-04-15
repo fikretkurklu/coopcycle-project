@@ -1,0 +1,32 @@
+{
+  "applications": "*",
+  "changelogDate": "20220415202136",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "cooperative",
+  "fields": [
+    {
+      "fieldName": "city",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "numberOfShop",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Cooperative",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "shop",
+      "otherEntityRelationshipName": "cooperative",
+      "relationshipName": "shop",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}
